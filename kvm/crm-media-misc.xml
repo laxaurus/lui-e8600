@@ -1,0 +1,5 @@
+<disk type='block' device='disk'>
+      <driver name='qemu' type='raw' cache='none' io='native'/>
+      <source dev='/dev/pool-crm-media-m/crm_media_misc'/>
+      <target dev='vde' bus='virtio'/>
+    </disk>

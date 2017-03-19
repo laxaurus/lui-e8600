@@ -1,0 +1,5 @@
+    <disk type='block' device='disk'>
+      <driver name='qemu' type='raw' cache='none' io='native'/>
+      <source dev='/dev/pool_lvuser_space/user_space_001'/>
+      <target dev='vdg' bus='virtio'/>
+    </disk>

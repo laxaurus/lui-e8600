@@ -1,0 +1,6 @@
+    <disk type='block' device='disk'>
+      <driver name='qemu' type='raw' cache='none' io='native'/>
+      <source dev='/dev/vgfamily/lvuser_private'/>
+      <target dev='vdd' bus='virtio'/>
+      <alias name='virtio-lvuser_private'/>
+    </disk>
