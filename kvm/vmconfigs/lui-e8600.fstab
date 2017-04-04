@@ -1,0 +1,21 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+/dev/mapper/lui--e8600--vg-root /               ext4    errors=remount-ro 0       1
+# /boot was on /dev/sdb1 during installation
+UUID=81d098f4-aa68-4204-be59-6947cf0a279c /boot           ext2    defaults        0       2
+#/dev/mapper/lui--e8600--vg-swap_1 none            swap    sw              0       0
+/dev/mapper/cryptswap1 none swap sw 0 0
+
+
+UUID=e9455215-e15b-4fe1-813a-69cff641b65d /opt	ext4	errors=remount-ro 0     0 
+
+
+#UUID=670ec4c3-7913-4499-a721-498339cabab0 /extvd	ext4	errors=remount-ro 0      2
+
+
+UUID=69b629e1-75c0-40e2-baa4-e307f4cea969	/mnt/vd_images ext4	errors=remount-ro 0     0 
