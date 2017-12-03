@@ -10,8 +10,8 @@ virsh attach-device --config vsu-armadillo crm-media-misc.xml
 ./start-pool-crm-media.sh
 virsh attach-device --config vsu-armadillo crm-media.xml
 
-#./start-pool-user-space.sh
-#virsh attach-device --config vsu-armadillo user-space.xml
+./start-pool-user-space.sh
+virsh attach-device --config vsu-armadillo user-space.xml
 
 ./start-pool-crm-crypt-u.sh
 virsh attach-device --config vsu-armadillo crm-media-002.xml
